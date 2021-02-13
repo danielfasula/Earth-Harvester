@@ -108,5 +108,6 @@ function update() {
 
 }
 
+update()
 startInterval()
 
