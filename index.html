@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Harvest The Humans</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="text-center">Harvest The Humans</h1>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row justify-content-center pt-5">
+                <div class="col-md-3">
+                    <img onclick="mine()" src="earth.jpg" class="rounded-circle" alt="">
+                </div>
+            </div>
+            <div class="row justify-content-around mt-5">
+                <div class="col-md-4">
+                    <h3 class="p-2">Humans Harvested: <span id="humans">0</span></h3>
+                    <h3 class="p-2">Click Modifiers: <span id="click-modifier">0</span></h3>
+                    <h3 class="p-2">Auto Modifiers: <span id="auto-modifier">0</span></h3>
+                    <!-- add how many of each modifiers they have and how many resources those bring in -->
+                </div>
+                <div class="col-md-4">
+                    <h2>Modifiers Active</h2>
+                    <h4>Click Modifiers:</h4>
+                    <p>Lazers: x <span id="lazer-qty">0</span></p>
+                    <p>Invasions: x <span id="invasion-qty">0</span></p>
+                    <h4> Auto Modifiers:</h4>
+                    <p>Landwalkers: x <span id="land-walkers-qty">0</span></p>
+                    <p>Experiments: x <span id="experiments-qty">0</span></p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center text-center">
+                <div class="col-12 ">
+                    <h2>Upgrades</h2>
+                </div>
+                <!-- <div class="justify-content-center text-center"> -->
+                <div class="col-12 d-flex justify-content-center my-2">
+                    <h5>Lazer Beam</h5>
+                    <p>Cost: x<span id="lazer-cost">100 </span> </p>
+                    <button type="button" class="btn btn-outline-light"
+                        onclick="buyClickUpgrade('lazerBeam')">BUY</button>
+                </div>
+                <div class="col-12 d-flex justify-content-center my-2">
+                    <h5>Invasion</h5>
+                    <p>Cost: x<span id="invasion-cost">1000</span></p>
+                    <button type="button" class="btn btn-outline-light"
+                        onclick="buyClickUpgrade('invasion')">BUY</button>
+                </div>
+                <div class="col-12 d-flex justify-content-center my-2">
+                    <h5>Land Walkers</h5>
+                    <p>Cost: x<span id="land-walkers-cost">500</span></p>
+                    <button type="button" class="btn btn-outline-light"
+                        onclick="buyAutoUpgrade('landwalkers')">BUY</button>
+                </div>
+                <div class="col-12 d-flex justify-content-center my-2">
+                    <h5>Experiments</h5>
+                    <p>Cost: x<span id="experiments-cost">250</span></p>
+                    <button type="button" class="btn btn-outline-light"
+                        onclick="buyAutoUpgrade('experimentalIncursion')">BUY</button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4 class="mb-2">EW, YOUR PLANET IS GROSS!</h4>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

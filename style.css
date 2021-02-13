@@ -1,0 +1,22 @@
+body {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+background-image: url('outerspace.jpg');
+background-size: cover;
+color: white;
+}
+/* header {
+ 
+}  */
+main {
+flex-grow: 1;
+} 
+/* footer {
+ 
+} */
+
+.planet {
+    background-image: url('planet.jpg');
+    background-size: cover;
+}
