@@ -46,6 +46,7 @@ function buyClickUpgrade(key) {
         item.quantity++
         clickModifier += item.modifier
         item.price *= 2
+        alert('Purchased!')
     } else {
         // TODO change to alert or UI later
         alert('Bring Me More Humans');
@@ -60,6 +61,7 @@ function buyAutoUpgrade(key) {
         item.quantity++
         autoModifier += item.modifier
         item.price *= 2
+        alert('Purchased!')
 
     } else {
         alert('Bring Me More Humans');
